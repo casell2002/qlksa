@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5967EC86-5B8A-4EFD-98EC-6A24FDF80BBE}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+    <AssemblyKeyContainerName />
+    <AssemblyName>qlks</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>qlks</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.6.2.0\lib\net40\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="frmChangeProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoaiPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSDDichVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearch_KH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearch_Phong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTBTrangThietBi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThanhToanPhong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThietBi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Models\DMPHONG.cs" />
+    <Compile Include="Models\HDTHANHTOANPHONG.cs" />
+    <Compile Include="Models\KHACHHANG.cs" />
+    <Compile Include="Models\LOAIPHONG.cs" />
+    <Compile Include="Models\Model1.cs" />
+    <Compile Include="Models\NHANVIEN.cs" />
+    <Compile Include="Models\SUDUNGDV.cs" />
+    <Compile Include="Models\sysdiagrams.cs" />
+    <Compile Include="Models\THIETBI_DV.cs" />
+    <Compile Include="Models\THIETBI_PHONG.cs" />
+    <Compile Include="Models\THUEPHONG.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SqlHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Content Include="App.ico" />
+    <EmbeddedResource Include="frmChangeProfile.resx">
+      <DependentUpon>frmChangeProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKH.resx">
+      <DependentUpon>frmKH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoaiPhong.resx">
+      <DependentUpon>frmLoaiPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNV.resx">
+      <DependentUpon>frmNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPhong.resx">
+      <DependentUpon>frmPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSDDichVu.resx">
+      <DependentUpon>frmSDDichVu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearch_KH.resx">
+      <DependentUpon>frmSearch_KH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearch_Phong.resx">
+      <DependentUpon>frmSearch_Phong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTBTrangThietBi.resx">
+      <DependentUpon>frmTBTrangThietBi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThanhToanPhong.resx">
+      <DependentUpon>frmThanhToanPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThietBi.resx">
+      <DependentUpon>frmThietBi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>
